@@ -1,0 +1,8 @@
+type Artist @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  realName: String
+  stageName: [String!]
+  songs: [AWSURL!]
+  genre: String
+  events: [AWSJSON!]
+}
